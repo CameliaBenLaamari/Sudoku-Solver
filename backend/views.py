@@ -5,10 +5,6 @@ from backend.forms import UploadForm
 from backend.main import SolveSudoku
 from backend.models import SudokuGrid
 
-import time
-
-import logging
-
 # Create your views here.
 
 
