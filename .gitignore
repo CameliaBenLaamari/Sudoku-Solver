@@ -77,6 +77,9 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Dataset
+static/dataset/
+
 # IPython
 profile_default/
 ipython_config.py
@@ -89,7 +92,7 @@ ipython_config.py
 #   However, in case of collaboration, if having platform-specific dependencies or dependencies
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
 #   install all needed dependencies.
-#Pipfile.lock
+Pipfile.lock
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
@@ -127,3 +130,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Media files
+/media

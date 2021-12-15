@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'TT Commons';
+    src: url('fonts/TT-Commons/TT Commons Thin.otf');
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: 'TT Commons';
+    src: url('fonts');
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: 'TT Commons';
+    src: url('fonts/TT-Commons/TT Commons Light.otf');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'TT Commons';
+    src: url('fonts/TT-Commons/TT Commons Regular.otf');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'TT Commons';
+    src: url('fonts/TT-Commons/TT Commons Medium.otf');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'TT Commons';
+    src: url('fonts/TT-Commons/TT Commons DemiBold.otf');
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: 'TT Commons';
+    src: url('fonts/TT-Commons/TT Commons Bold.otf');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'TT Commons';
+    src: url('fonts/TT-Commons/TT Commons ExtraBold.otf');
+    font-weight: 800;
+  }
+  
+  @font-face {
+    font-family: 'TT Commons';
+    src: url('fonts/TT-Commons/TT Commons Black.otf');
+    font-weight: 900;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'TT Commons', sans-serif;
+}
+
+html, body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.btn.btn-primary{
+    margin: 3vh;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+}
+
+.input{
+    width: 70vh;
+    text-align: left;
+}
+
+.form-control{
+    text-align: left;
+}
