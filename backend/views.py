@@ -18,7 +18,7 @@ def index(request):
         if form.is_valid():
             form.save()
             sudoku = form.instance
-            solution = SolveSudoku('https://www.101computing.net/wp/wp-content/uploads/sudoku-grid.png')
+            solution = SolveSudoku(sudoku.grid.url)
             context = {
                 'form': form,
                 'sudoku': sudoku,

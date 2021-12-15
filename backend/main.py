@@ -1,10 +1,10 @@
 # Loading libraries
+import os
 import numpy as np
-from backend.training import ModelTraining
 import cv2
-import matplotlib.pyplot as plt
 from PIL import Image
 import logging
+import tensorflow as tf
 
 
 # Function to greyscale, blur and change the receptive threshold of image
@@ -65,8 +65,7 @@ def CropCell(cells):
 
 def TransformImage(file_path):
 
-    img = plt.imread(
-        'https://www.101computing.net/wp/wp-content/uploads/sudoku-grid.png')
+    img = cv2.imread(file_path)
     logging.warning(file_path)
 
     # Preprocessing image to be read
@@ -121,7 +120,7 @@ def read_cells(cell, model):
 
 
 def OCR(sudoku_cell_cropped):
-    model = ModelTraining()
+    model = tf.keras.models.load_model(os.path.abspath('./static') + '/model')
     grid = read_cells(sudoku_cell_cropped, model)
     grid = np.asarray(grid)
     matrix = np.reshape(grid, (9, 9))
@@ -208,9 +207,11 @@ def backtracking(arr):
 
 
 def SolveSudoku(file_path):
+    file_path = os.path.abspath('./' + file_path)
+    logging.warning(file_path)
     cell = TransformImage(file_path)
     grid = OCR(cell)
     if backtracking(grid):
         return grid
     else:
-        return None
+        return np.zeros((9, 9), dtype='int')

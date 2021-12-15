@@ -23,14 +23,16 @@ def Prep(img):
 
 def preprocessing():
 
-    data = os.listdir(r"../static/dataset/Digits")
+    data = os.listdir(os.path.abspath('./static/dataset/Digits'))
     data_X = []
     data_y = []
     data_classes = len(data)
     for i in range(0, data_classes):
-        data_list = os.listdir(r"../static/dataset/Digits" + "/"+str(i))
+        data_list = os.listdir(os.path.abspath(
+            './static/dataset/Digits') + "/"+str(i))
         for j in data_list:
-            pic = cv2.imread(r"../static/dataset/Digits" + "/"+str(i)+"/"+j)
+            pic = cv2.imread(
+                os.path.abspath('./static/dataset/Digits') + "/"+str(i)+"/"+j)
             pic = cv2.resize(pic, (32, 32))
             data_X.append(pic)
             data_y.append(i)
@@ -108,3 +110,8 @@ def ModelTraining():
               verbose=2, steps_per_epoch=200)
 
     return model
+
+
+if __name__ == '__main__':
+    model = ModelTraining()
+    model.save(os.path.abspath('./static') + '/model')

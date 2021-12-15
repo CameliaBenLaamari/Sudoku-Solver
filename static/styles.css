@@ -60,28 +60,88 @@
 
 html, body{
     display: grid;
-    height: 100%;
-    place-items: center;
-}
-
-.btn.btn-primary{
-    margin: 3vh;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 5vh;
 }
 
 #form{
     display: flex;
-    flex-direction: column;
-    width: 60%;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin: 5vh;
 }
 
-.input{
-    width: 70vh;
-    text-align: left;
+.btn.btn-primary{
+  margin: 3vh;
+  text-align: center;
 }
 
-.form-control{
-    text-align: left;
+#header{
+  text-align: center;
+  margin: 5vh
+}
+
+#header h1{
+  text-align: center;
+  font-weight: 600;
+  font-size: 8vh;
+}
+
+#header h2{
+  font-size: 3vh;
+}
+
+#upload{
+  text-align: left;
+  width: 80%;
+  margin: 20vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+#upload h3{
+  font-size: 2.5vh;
+}
+
+#solution{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10vh;
+  margin-top: 5vh;
+}
+
+.table.table-bordered{
+  margin: 5vh;
+  border-color: rgba(128, 128, 128, 0.5);
+  width: 50vh;
+  height: 50vh;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.grid{
+  margin: 5vh;
+}
+
+.table.table-bordered td{
+  padding: 0;
+  vertical-align: middle;
+}
+
+.table.table-bordered tr:first-child{
+  border-top: solid 2px gray;
+}
+
+.table.table-bordered tr:nth-child(3n){
+  border-bottom: solid 2px gray;
+}
+
+.table.table-bordered td:first-child{
+  border-left: solid 2px gray;
+}
+
+.table.table-bordered td:nth-child(3n){
+  border-right: solid 2px gray;
 }
