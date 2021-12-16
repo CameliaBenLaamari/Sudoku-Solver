@@ -10,6 +10,12 @@ Sudoku Solver is an AI application for solving Sudoku grids using Backtracking a
   - tensorflow
   - pillow
   - django-mathfilters
+``` 
+  pip install numpy
+  pip install opencv-python
+  pip install tensorflow
+  pip install pillow
+```
 3. Run `python manage.py makemigrations` to check if there are any committed changes.
 4. Run `python manage.py migrate` to push these changes (if any).
 5. Finally run `python manage.py runserver` to run the app on `http://localhost:8000/`.
