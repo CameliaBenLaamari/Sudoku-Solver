@@ -206,11 +206,15 @@ def backtracking(arr):
     return False
 
 
-def SolveSudoku(file_path):
+def ReadGrid(file_path):
     file_path = os.path.abspath('./' + file_path)
-    logging.warning(file_path)
     cell = TransformImage(file_path)
     grid = OCR(cell)
+    return grid
+
+
+def SolveSudoku(file_path):
+    grid = ReadGrid(file_path)
     if backtracking(grid):
         return grid
     else:

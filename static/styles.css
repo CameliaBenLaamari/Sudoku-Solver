@@ -145,3 +145,7 @@ html, body{
 .table.table-bordered td:nth-child(3n){
   border-right: solid 2px gray;
 }
+
+.new{
+  color:#0d6efd;
+}
