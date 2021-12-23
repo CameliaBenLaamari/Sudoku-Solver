@@ -18,15 +18,17 @@ Sudoku Solver is an AI application for solving Sudoku grids using Backtracking a
 ```
 3. Run `python manage.py makemigrations` to check if there are any committed changes.
 4. Run `python manage.py migrate` to push these changes (if any).
-5. Finally run `python manage.py runserver` to run the app on `http://localhost:8000/`.
-6. Upload an image of a sudoku grid. The better the quality, the better the result you get.
+6. Finally run `python manage.py runserver` to run the app on `http://localhost:8000/`.
+7. Upload an image of a sudoku grid. The better the quality, the better the result you get.
 
-![screenshot](https://user-images.githubusercontent.com/76062686/146265653-eace6660-8efb-4cf7-bf1f-b7c282a27c3f.png)
+![screenshot](https://user-images.githubusercontent.com/76062686/147242753-68e09b18-6264-4b66-993a-5056ddd0368f.png)
 
+Training dataset source: https://www.kaggle.com/karnikakapoor/digits
 
 ## Authors
 - Ahmed Kallel
 - Camelia Ben Laamari
 
+<br/><br/>
 
 © 2021 SUP'COM.
